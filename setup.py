@@ -10,13 +10,12 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines().remove(" -e .")
-
+        return requirement_file.readlines()
 PROJECT_NAME="housing_predictor"
 VERSION= "0.0.2"
 AUTHOR="Jayesh"
 DESCRIPTION= "First major project of machine learning "
-PACKAGES= "find_packages"
+PACKAGES=["housing"]
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 setup(
