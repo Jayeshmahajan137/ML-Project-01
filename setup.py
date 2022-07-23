@@ -12,7 +12,7 @@ def get_requirements_list()->List[str]:
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         return requirement_file.readlines().remove(" -e .")
 PROJECT_NAME="housing_predictor"
-VERSION= "0.0.2"
+VERSION= "0.0.3"
 AUTHOR="Jayesh"
 DESCRIPTION= "First major project of machine learning "
 PACKAGES=["housing"]
