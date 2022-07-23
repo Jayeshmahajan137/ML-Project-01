@@ -16,7 +16,7 @@ PROJECT_NAME="housing_predictor"
 VERSION= "0.0.4"
 AUTHOR="Jayesh"
 DESCRIPTION= "First major project of machine learning "
-PACKAGES=find_packages(),
+
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 setup(
