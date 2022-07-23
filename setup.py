@@ -13,7 +13,7 @@ def get_requirements_list()->List[str]:
         return requirement_file.readlines().remove(" -e .")
 
 PROJECT_NAME="housing_predictor"
-VERSION= "0.0.3"
+VERSION= "0.0.4"
 AUTHOR="Jayesh"
 DESCRIPTION= "First major project of machine learning "
 REQUIREMENT_FILE_NAME="requirements.txt"
