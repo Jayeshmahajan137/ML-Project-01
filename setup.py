@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import  setup
 from typing import List
 
 def get_requirements_list()->List[str]:
@@ -10,13 +10,13 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove(" -e .")
 
 PROJECT_NAME="housing_predictor"
-VERSION= "0.0.1"
+VERSION= "0.0.2"
 AUTHOR="Jayesh"
 DESCRIPTION= "First major project of machine learning "
-PACKAGES= ["housing"]
+PACKAGES= "find_packages"
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 setup(
