@@ -1,5 +1,3 @@
-from setuptools import setup
-
 from setuptools import setup,find_packages
 from typing import List
 
@@ -21,7 +19,7 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines().remove('-e .')
+        return requirement_file.readlines()
 
 
 setup(
